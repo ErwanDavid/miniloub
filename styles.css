@@ -1,0 +1,203 @@
+:root {
+  --main-bg-color: black;
+  --main-synth-bg-color : #252525;
+  --main-synth-border-color : #615748;
+  --main-synth-border : 0px;
+  --main-synth-border-color : blanchedalmond;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: blue;
+}
+
+body {
+    background-color:var(--main-bg-color);
+    font-family: "Lucida Console", Courier, monospace;
+    
+}
+h1 {
+    font-size: medium;
+    padding-left : 20px;
+  }
+main {
+    color: blanchedalmond;
+    padding-left : 10px;
+    
+}
+footer {
+  color: blanchedalmond;
+}
+.headerH1 {
+  min-width: 600px;
+  height: 75px;
+  background:var(--main-bg-color);
+  resize: none;
+  color:blanchedalmond;
+  border: 1px solid var(--main-bg-color);
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.beforeSynth {
+  max-width: 1200px;
+}
+
+
+.mainTable {
+  width: 78%; 
+  display: table;
+  background-color: var(--main-synth-bg-color);
+  border: 8px solid #1B8BD2;
+  border-radius: 25px;
+  max-width: 1400px;
+
+}
+.mainSynth {
+  color: blanchedalmond;
+  height: 540px;
+  background-color: var(--main-synth-bg-color);
+  max-width: 970px;
+  min-width: 600px;
+  border-radius: 25px;
+  
+}
+
+.scopeCell {
+  display: table-cell;
+  border: var(--main-synth-border) solid var(--main-synth-border-color);
+  background-color: var(--main-synth-bg-color);
+  border-radius: 25px;
+  height: 530px;
+}
+
+.scope {
+  padding : 20px;
+  color:black;
+  height: 100%;
+}
+
+.display {
+  font-size: 17px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 750px;
+  resize: none;
+  background:rgb(255 255 0 / 5%);
+  color: #FFFF33;
+  height: 70px;
+  border:0px solid black;
+}
+
+.simple-keyboard {
+  max-width: 950px;
+  min-width: 700px;
+  background-color: var(--main-synth-bg-color);
+  padding-top : 20px;
+  padding-left : 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.simple-keyboard .hg-button{
+  background: grey;
+  color: rgb(80, 80, 80);
+  height: 50px;
+  width: 50px;
+}
+
+.hg-button.hg-blacknote {
+  background: black;
+  color: white;
+}
+
+.hg-button.hg-whitenote {
+  background: white;
+  color: black;
+}
+.hg-button.hg-used {
+  background: blanchedalmond;
+}
+.hg-button.hg-large {
+  min-width: 75px;
+  max-width: 110px;
+}
+.hg-button.hg-small {
+  max-width: 50px;
+}
+
+.hg-button.hg-highlight {
+  box-shadow: 0px 0px 40px 5px rgba(255, 255, 0, 0.5);
+  z-index: 1;
+  background: #8a97db;
+
+}
+.simple-keyboard-arrows.simple-keyboard {
+  align-self: flex-end;
+  background-color: var(--main-synth-bg-color);
+  max-width: 950px;
+  min-width: 600px;
+  padding-left : 20px;
+}
+
+.simple-keyboard-arrows.simple-keyboard .hg-button{
+  background: grey;
+  color: rgb(80, 80, 80);
+  height: 25px;
+}
+.simple-keyboard-arrows.simple-keyboard .hg-button.hg-used {
+  background: blanchedalmond;
+  color: black;
+  height: 25px;
+}
+.logs {
+  resize: none;
+  background:black;
+  font-family: "Lucida Console", Courier, monospace;
+  color:green;
+  overflow:hidden;
+  min-width: 300px;
+  border:1px solid black;
+  height: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.radial {
+  display: "table-cell"
+}
+
+
+.notes {
+  resize: none;
+  font-size: 40px;
+  background:var(--main-synth-bg-color);
+  font-family: "Lucida Console", Courier, monospace;
+  color:#344ab1;
+  overflow:hidden;
+  min-width: 300px;
+  max-width: 400px;
+  border:var(--main-synth-border) solid var(--main-synth-border-color);
+  height: 45px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.afterSynth {
+  font-size: 14px;
+  min-width: 780px;
+  max-width: 970px;
+  background:black;
+  color: blanchedalmond;
+  height: 120px;
+  resize: none;
+  border: var(--main-synth-border) solid var(--main-synth-border-color);
+}

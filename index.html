@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Miniloub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+    </header>
+	<script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.65/Tone.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/nexusui@latest/dist/NexusUI.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi"></script>
+    
+    <!-- Here is our page's main content -->
+    <main>
+        <div id="beforeSynth" class="beforeSynth">Hi! ENJOY, hit your keybourde !
+        </div>
+        <br>
+
+        <div  id="mainTable" class="mainTable">
+            <div style="display: table-row">
+                <div style="width: 1000px; display: table-cell;"> 
+                    <div id="mainSynth" class="mainSynth">
+                        <div><textarea readonly id="display" class="display">Init...</textarea></div>
+						<div id="radiusLine1" class="radiusLine1" style="display: table-row"> 
+              <script>
+								var j=0;
+								var parent = document.getElementById("radiusLine1")
+								do {
+									  j += 1;
+									  var keypad1 = document.createElement("div");
+									  keypad1.classList.add("radial");
+									  keypad1.id = "radial1-".concat(j);
+									  keypad1.style.display = "table-cell";
+									  keypad1.style.width = "90px";
+									  console.log("Created div 1 ", keypad1.id);
+									  parent.appendChild(keypad1); 
+									} while (j < 6);
+														
+								</script>
+						</div>
+						<div id="radiusLine2" class="radiusLine2" style="display: table-row"> 
+            <script>
+								var y=0;
+								var parent = document.getElementById("radiusLine2")
+								do {
+									  y += 1;
+									  var keypad1 = document.createElement("div");
+									  keypad1.classList.add("radial");
+									  keypad1.id = "radial2-".concat(y);
+									  keypad1.style.display = "table-cell";
+									  keypad1.style.width = "90px";
+									  console.log("Created div 2 ", keypad1.id);
+									  parent.appendChild(keypad1); 
+                    //var textpad = document.createElement("div");
+									  //textpad.classList.add("textDiv");
+									  //textpad.id = "txt-radial2-".concat(y);
+									  //textpad.style.display = "contents";
+                    //textpad.innerText = textpad.id;
+									  //textpad.style.width = "90px";
+									  //parent.appendChild(textpad); 
+									} while (y < 6);
+														
+								</script>
+						</div>
+                        <br>
+                        <div style="width: 100%; display: table-cell;"> 
+                          <div style="display: table-row;">
+                              <div style="display: table-cell; min-width: 350px;width: 50%;vertical-align: top;">
+                                <textarea readonly id="logs" class="logs"></textarea></div>
+                              <div style="display: table-cell;width: 50%;vertical-align: middle;">
+                                <textarea readonly id="notes" class="notes"></textarea></div>
+								
+                          </div>
+                        </div>
+                        <button id="mainButton" name="mainButton">Play a note ! </button>
+                        <button id="arpButton" name="arpButton">Switch ARP </button>
+                    </div>
+                </div>
+                <div id="scopeCell" class="scopeCell"> 
+                  <div id="scope" class='scope'>Oscilloscope : </div> 
+                </div>
+            </div>
+        </div>  
+        <br>  
+
+        <div>
+<textarea id="afterSynth" class="afterSynth">afterSynth</textarea></div>
+    </main>
+
+    
+
+    <script src="keyboardManager.js"></script>
+    <script src="midi.js"></script>
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <footer>
+        <p>By Rwax, Source code on github : <a href="https://github.com/ErwanDavid/thekeybourde">https://github.com/ErwanDavid/thekeybourde</a> </p>
+    </footer>
+
+  </body>
+</html>
